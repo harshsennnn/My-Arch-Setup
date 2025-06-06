@@ -7,8 +7,8 @@
 ## 💻 Hardware Specifications
 *   **Device:** ASUS TUF Gaming F15
 *   **CPU:** Intel Core i5 (Comet Lake-H)
-*   **GPU 0 (Integrated):** Intel UHD Graphics 630 (CometLake-H GT2) - *Drives Internal Display*
-*   **GPU 1 (Discrete):** NVIDIA GeForce GTX 1650 Mobile / Max-Q - *Render Offload & External HDMI*
+*   **GPU-0 (Integrated):** Intel UHD Graphics 630 (CometLake-H GT2) - *Drives Internal Display*
+*   **GPU-1 (Discrete):** NVIDIA GeForce GTX 1650 Mobile / Max-Q - *Render Offload & External HDMI*
 *   **Bootloader:** `systemd-boot`
 
 ***
