@@ -32,14 +32,14 @@ options root=UUID=YOUR_ROOT_UUID rw quiet splash ibt=off nvidia_drm.modeset=1 nv
 ### 2. Initramfs Modules
 Early loading of NVIDIA modules is required to prevent SDDM from launching before the GPU is ready.
 
-### 🔒 Security & Disk Encryption (LVM on LUKS)
+## 🔒 Security & Disk Encryption (LVM on LUKS)
 
 This setup provides full disk encryption (LUKS) for security and uses Logical Volume Management (LVM) for flexible partition resizing. This is typically done before partitioning and formatting.
-## 1. Disk Encryption (LUKS)
+### 1. Disk Encryption (LUKS)
 
 This step encrypts the entire partition where your LVM volumes will reside (excluding /boot/efi).
 
-## 2. Logical Volume Management (LVM)
+### 2. Logical Volume Management (LVM)
 
 Once the LUKS volume is open, you create the LVM structure inside the decrypted container.
 
