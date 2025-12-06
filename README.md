@@ -32,7 +32,7 @@ options root=UUID=YOUR_ROOT_UUID rw quiet splash ibt=off nvidia_drm.modeset=1 nv
 ### 2. Initramfs Modules
 Early loading of NVIDIA modules is required to prevent SDDM from launching before the GPU is ready.
 
-## 🔒 Security & Disk Encryption (LVM on LUKS)
+## 🔒 Security & Disk Encryption [LVM on LUKS](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS)
 
 This setup provides full disk encryption (LUKS) for security and uses Logical Volume Management (LVM) for flexible partition resizing. This is typically done before partitioning and formatting.
 ### 1. Disk Encryption (LUKS)
