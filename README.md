@@ -35,11 +35,11 @@ Early loading of NVIDIA modules is required to prevent SDDM from launching befor
 ## 🔒 Security & Disk Encryption [LVM on LUKS](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS)
 
 This setup provides full disk encryption (LUKS) for security and uses Logical Volume Management (LVM) for flexible partition resizing. This is typically done before partitioning and formatting.
-### 1. Disk Encryption (LUKS)
+### A. Disk Encryption (LUKS)
 
 This step encrypts the entire partition where your LVM volumes will reside (excluding /boot/efi).
 
-### 2. Logical Volume Management (LVM)
+### B. Logical Volume Management (LVM)
 
 Once the LUKS volume is open, you create the LVM structure inside the decrypted container.
 
