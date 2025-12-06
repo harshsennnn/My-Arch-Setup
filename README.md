@@ -86,4 +86,4 @@ env = WLR_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1
 *   [Arch Wiki: Hyprland](https://wiki.archlinux.org/title/Hyprland) 
 *   [Arch Wiki: NVIDIA](https://wiki.archlinux.org/title/NVIDIA) 
 *   [Hyprland Wiki: NVIDIA Guide](https://wiki.hyprland.org/Nvidia/)
-*   [1](https://wiki.archlinux.org/title/PRIME)
+*   [Prime-run](https://wiki.archlinux.org/title/PRIME)
