@@ -1,0 +1,342 @@
+@import "../../.cache/wal/colors-waybar-custom.css";
+
+* {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#custom-rofi {
+    font-size: 18px;
+    color: @foreground;
+    padding: 2 5 0 0px;
+    margin: 5 0 4 0px;
+    background-color: @background;
+    border-radius: 8px;
+}
+
+#custom-swaync {
+    padding: 0 2px;
+    margin: 0 2px;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 18px;
+    color: @foreground;
+    background-color: transparent;
+}
+
+#workspaces button {
+    padding: 0 3px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    background-color: @background;
+    color: @foreground;
+    transition: 0.2s ease-in-out;
+}
+
+#workspaces button:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#workspaces button:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#workspaces button:hover {
+    background: @color1;
+}
+
+#workspaces button.focused {
+    background-color: @color1;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#workspaces button.urgent {
+    background-color: @color9;
+}
+
+#workspaces button.active {
+    color: @color3;
+}
+
+#mode {
+    background-color: @background;
+    color: @foreground;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 2 8px;
+    color: @foreground;
+    background-color: @background;
+    margin: 5px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @background;
+    color: @foreground;
+}
+
+#battery {
+    background-color: @background;
+    color: @foreground;
+}
+
+#battery.charging, #battery.plugged {
+    color: @foreground;
+    background-color: @background;
+}
+
+@keyframes blink {
+    to {
+        background-color: @foreground;
+        color: @background;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @color9;
+    color: @background;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Power profiles - transparent bg, custom color */
+#power-profiles-daemon {
+    background-color: transparent;
+    color: @power-profile-color;
+}
+
+#power-profiles-daemon.performance {
+    font-size: 18px;
+    color: @power-profile-color;
+}
+
+#power-profiles-daemon.balanced {
+    font-size: 18px;
+    color: @power-profile-color;
+}
+
+#power-profiles-daemon.power-saver {
+    font-size: 18px;
+    color: @power-profile-color;
+}
+
+label:focus {
+    background-color: @background;
+}
+
+#cpu {
+    background-color: @background;
+    color: @foreground;
+}
+
+#memory {
+    background-color: @background;
+    color: @foreground;
+}
+
+#disk {
+    background-color: @background;
+    color: @foreground;
+}
+
+#backlight {
+    background-color: @background;
+    color: @foreground;
+}
+
+#network {
+    background-color: @background;
+    color: @foreground;
+}
+
+#network.disconnected {
+    background-color: @color9;
+    color: @background;
+}
+
+#pulseaudio {
+    background-color: @background;
+    color: @foreground;
+}
+
+#pulseaudio.muted {
+    background-color: @background;
+    color: @color8;
+}
+
+#wireplumber {
+    background-color: @background;
+    color: @foreground;
+}
+
+#wireplumber.muted {
+    background-color: @color9;
+    color: @background;
+}
+
+#custom-media {
+    background-color: @background;
+    color: @foreground;
+    min-width: 100px;
+}
+
+#temperature {
+    background-color: @background;
+    color: @foreground;
+}
+
+#temperature.critical {
+    background-color: @color9;
+    color: @background;
+}
+
+#tray {
+    background-color: @background;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @color1;
+}
+
+#idle_inhibitor {
+    background-color: @background;
+    color: @foreground;
+}
+
+#idle_inhibitor.activated {
+    background-color: @foreground;
+    color: @background;
+}
+
+#mpd {
+    background-color: @background;
+    color: @foreground;
+}
+
+#mpd.disconnected {
+    background-color: @color9;
+}
+
+#mpd.stopped {
+    background-color: @background;
+}
+
+#mpd.paused {
+    background-color: @background;
+}
+
+#language {
+    background: @background;
+    color: @foreground;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: @background;
+    color: @foreground;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: @foreground;
+}
+
+#privacy-item.screenshare {
+    background-color: @color9;
+}
+
+#privacy-item.audio-in {
+    background-color: @color2;
+}
+
+#privacy-item.audio-out {
+    background-color: @color4;
+}
+
