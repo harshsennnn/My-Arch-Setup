@@ -8,6 +8,7 @@
 
   
 
+
 ## 💻 Hardware Specifications
 *   **Device:** ASUS TUF Gaming F15
 *   **CPU:** Intel Core i5 (Comet Lake-H)
@@ -17,7 +18,7 @@
 
 ***
 
-## ⚙️ System Installation & Core Config
+##  System Installation & Core Config
 
 ### 1. Bootloader (systemd-boot)
 Unlike GRUB, this setup uses `systemd-boot`. The kernel parameters are crucial for preventing boot freezes and ensuring the NVIDIA driver loads with DRM KMS support.
