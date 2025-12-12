@@ -1,5 +1,5 @@
 # 🌌 Arch Linux Hyprland Setup (ASUS TUF F15)
-
+    
 > **A high-performance hybrid graphics setup using Arch Linux, Hyprland (Wayland), Prime-run on the ASUS TUF F15.**
 
 <p align="center">
