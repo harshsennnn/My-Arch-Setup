@@ -2,6 +2,10 @@
 
 > **A high-performance hybrid graphics setup using Arch Linux, Hyprland (Wayland), Prime-run on the ASUS TUF F15.**
 
+<p align="center">
+  <img src="preview/desktop2.jpg">
+</p>
+
   
 
 ## 💻 Hardware Specifications
@@ -56,6 +60,8 @@ We use SDDM with the Qt6 Wayland backend. A specific configuration is needed to 
 ## 🖼️ Hyprland Configuration
 
 Modular Dotfiles for clean config code
+
+
 
 ### Environment Variables
 Essential for preventing flickering, cursor disappearance, and ensuring apps use the NVIDIA GPU when requested.
