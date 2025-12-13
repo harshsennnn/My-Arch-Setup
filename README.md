@@ -61,7 +61,9 @@ We use SDDM with the Qt6 Wayland backend. A specific configuration is needed to 
 
 Modular Dotfiles for clean config code
 
-
+<p align="center">
+  <img src="preview/desktop1.jpg">
+</p>
 
 ### Environment Variables
 Essential for preventing flickering, cursor disappearance, and ensuring apps use the NVIDIA GPU when requested.
